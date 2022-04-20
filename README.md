@@ -24,8 +24,8 @@ import { tinderAutoLike } from "tinder-auto-like";
     const tinderAutoLikeConfig = {
         facebookAuth: {
             token:
-            "EAAGm0PX4ZCpsBAMXM4arasj7iEYg2DI5UCI7a28AE0WcIw3YdgmfyMlXrn8bVnEy5Iz1wPsFIjrco1PmKXKwdPPdTkedqbQqLdy3aVoifnSMVvX2z9qKLXQD8ZAPrgEsFOruh2XYJEGYMQzZB4QnMACpn5LZBiY1HiNQCk5qei1ww9roiJJZB",
-            facebook_id: "1651500123",
+            "EAAGm0PX4ZCpsBAMXM4araj7iEYg2DI5UCI7a28AE0WcIw3YdgmfyMlXrn8bVnEy5Iz1wPsFIjrco1PmKXKwdPPdTkedqbQqLdy3aVoifnSMVvX2z9qKLXQD8ZAPrgEsFOruh2XYJEGYMQzZB4QnMACpn5LZBiY1HiNQCk5qei1ww9roiJJZB",
+            facebook_id: "165150012",
         },
         // criterias are optional
         criterias: {
