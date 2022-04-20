@@ -1,6 +1,7 @@
 # tinder-auto-like
 
 Auto like / pass recommanded profiles with or without additional filters.<br />
+Using package tinder-api-js<br />
 Working April 2022 - Only facebook auth.<br />
 Get your facebook id here : https://lookup-id.com/<br />
 Get facebook header here :<br />
