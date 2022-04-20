@@ -1,8 +1,8 @@
 {
-  "name": "use-tinder",
+  "name": "tinder-auto-like",
   "version": "1.0.2",
   "author": "christophe bellec",
-  "homepage": "https://github.com/christophe77/use-tinder",
+  "homepage": "https://github.com/christophe77/tinder-auto-like",
   "engines": {
     "node": "12.x || 14.x || >= 16"
   },
