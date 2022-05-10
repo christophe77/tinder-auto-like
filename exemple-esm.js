@@ -1,7 +1,7 @@
 import { tinderAutoLike } from "./dist/esm";
 
 const tinderAutoLikeConfig = {
-  facebookAuth : {
+  facebookAuth: {
     email: "email@gmail.com",
     password: "password",
   },

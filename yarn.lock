@@ -1383,10 +1383,10 @@ through@^2.3.8:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
-tinder-api-js@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/tinder-api-js/-/tinder-api-js-1.0.7.tgz#6f935a87c4a97aebfcea49c31594102a06395c32"
-  integrity sha512-Sb9I10sWHfkzOLpQCg8M8ZTgqw7X/HrgWWvwPnd5b4oqtziD5DHJUwFwj0mnjMAOVv0IqrdQ0X5hrqrpmNVUuQ==
+tinder-api-js@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/tinder-api-js/-/tinder-api-js-1.0.9.tgz#3f0b60f9cceec282f0f6d27f555c22b9dfe8491c"
+  integrity sha512-4CY3lX88S49qHZOX5rZ4NHm5jGmP71zN+Icuc2KWjYlNpFSZXF9m/UK1j7ZYV081KV/fNWG5mtERWNB5/AfkzA==
   dependencies:
     axios "^0.26.1"
     puppeteer "^13.7.0"
