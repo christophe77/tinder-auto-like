@@ -1,7 +1,7 @@
 export declare type TinderAutoLikeConfig = {
     facebookAuth: {
-        token: string;
-        facebook_id: string;
+        email: string;
+        password: string;
     };
     criterias: {
         hasBio?: boolean;
