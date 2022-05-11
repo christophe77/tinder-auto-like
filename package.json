@@ -1,6 +1,6 @@
 {
   "name": "tinder-auto-like",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "christophe bellec",
   "homepage": "https://github.com/christophe77/tinder-auto-like",
   "engines": {
@@ -33,6 +33,6 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "tinder-api-js": "^1.0.9"
+    "tinder-api-js": "^1.0.10"
   }
 }
