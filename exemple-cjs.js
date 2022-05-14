@@ -1,10 +1,10 @@
 const { tinderAutoLike } = require("./dist/cjs");
 
 const tinderAutoLikeConfig = {
-  facebookAuth = {
+  facebookAuth : {
     email: "email@gmail.com",
     password: "password",
-  };,
+  },
   criterias: {
     hasBio: true,
     hasJob: false,
