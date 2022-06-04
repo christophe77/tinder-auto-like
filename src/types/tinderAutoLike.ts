@@ -7,5 +7,6 @@ export type TinderAutoLikeConfig = {
     hasBio?: boolean;
     hasJob?: boolean;
     minPics?: number;
+    maxDistance?: number;
   };
 };

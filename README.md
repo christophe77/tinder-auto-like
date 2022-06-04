@@ -2,7 +2,7 @@
 
 Auto like / pass recommanded profiles with or without additional filters.<br />
 Using package tinder-api-js<br />
-Working may 2022 - Only facebook auth.<br />
+Working june 2022 - Only facebook auth.<br />
 
 ## Usage
 
@@ -26,6 +26,7 @@ in your js file :
             hasBio: true,
             hasJob: false,
             minPics: 3,
+            maxDistance: 15
         },
     };
 

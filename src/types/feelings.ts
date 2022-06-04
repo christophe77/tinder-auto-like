@@ -8,6 +8,7 @@ export type Criterias = {
   minPics?: number | 0;
   hasBio?: boolean;
   hasJob?: boolean;
+  maxDistance?: number;
 };
 export type AutoLike = {
   availableProfileAmount: number;

@@ -63,6 +63,10 @@ const hasCriterias = function (profile, criterias) {
         reasonPassed = `${reasonPassed} no bio filled`;
         hasAllCriterias = false;
     }
+    if ((criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) && (criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) <= profile.distance_mi) {
+        reasonPassed = `${reasonPassed} too far`;
+        hasAllCriterias = false;
+    }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.hasJob) && profile.jobs.length === 0) {
         reasonPassed = `${reasonPassed} no job filled`;
         hasAllCriterias = false;
