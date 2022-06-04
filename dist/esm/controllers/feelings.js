@@ -58,7 +58,7 @@ const hasCriterias = function (profile, criterias) {
         hasAllCriterias = false;
     }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) && (criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) <= profile.distance_mi) {
-        reasonPassed = `${reasonPassed} too far`;
+        reasonPassed = `${reasonPassed} too far ${profile.distance_mi}km`;
         hasAllCriterias = false;
     }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.hasJob) && profile.jobs.length === 0) {
