@@ -50,7 +50,7 @@ function handleSendLikeResponse(sendLikeResponse, profile) {
     console.log(colors_1.colors.bgGreen, `you liked ${profile.name}`, colors_1.colors.reset);
 }
 function youPassed(name, reason) {
-    console.log(colors_1.colors.bgYellow, `you passed ${name} : ${reason}`, colors_1.colors.reset);
+    console.log(colors_1.colors.bgYellow, `you passed ${name} :${reason}`, colors_1.colors.reset);
 }
 async function handleSendLike(profile) {
     const sendLikeResponse = await sendLike(profile._id);
@@ -60,19 +60,19 @@ const hasCriterias = function (profile, criterias) {
     let hasAllCriterias = true;
     let reasonPassed = "";
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.hasBio) && profile.bio.length === 0) {
-        reasonPassed = `${reasonPassed} no bio filled`;
+        reasonPassed = `${reasonPassed} * no bio filled`;
         hasAllCriterias = false;
     }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) && (criterias === null || criterias === void 0 ? void 0 : criterias.maxDistance) <= profile.distance_mi) {
-        reasonPassed = `${reasonPassed} too far ${profile.distance_mi}km`;
+        reasonPassed = `${reasonPassed} * too far ${profile.distance_mi}km / mi`;
         hasAllCriterias = false;
     }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.hasJob) && profile.jobs.length === 0) {
-        reasonPassed = `${reasonPassed} no job filled`;
+        reasonPassed = `${reasonPassed} * no job filled`;
         hasAllCriterias = false;
     }
     if ((criterias === null || criterias === void 0 ? void 0 : criterias.minPics) && profile.photos.length < criterias.minPics) {
-        reasonPassed = `${reasonPassed} less than ${criterias === null || criterias === void 0 ? void 0 : criterias.minPics} pictures`;
+        reasonPassed = `${reasonPassed} * less than ${criterias === null || criterias === void 0 ? void 0 : criterias.minPics} pictures`;
         hasAllCriterias = false;
     }
     return { hasAllCriterias, reasonPassed };

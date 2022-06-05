@@ -40,7 +40,7 @@ function handleSendLikeResponse(sendLikeResponse: Feeling, profile: Result) {
   console.log(colors.bgGreen, `you liked ${profile.name}`, colors.reset);
 }
 function youPassed(name: string, reason: string) {
-  console.log(colors.bgYellow, `you passed ${name} : ${reason}`, colors.reset);
+  console.log(colors.bgYellow, `you passed ${name} :${reason}`, colors.reset);
 }
 async function handleSendLike(profile: Result) {
   const sendLikeResponse = await sendLike(profile._id);
@@ -53,19 +53,19 @@ const hasCriterias = function (
   let hasAllCriterias = true;
   let reasonPassed = "";
   if (criterias?.hasBio && profile.bio.length === 0) {
-    reasonPassed = `${reasonPassed} no bio filled`;
+    reasonPassed = `${reasonPassed} * no bio filled`;
     hasAllCriterias = false;
   }
   if (criterias?.maxDistance && criterias?.maxDistance <= profile.distance_mi) {
-    reasonPassed = `${reasonPassed} too far ${profile.distance_mi}km / miles`;
+    reasonPassed = `${reasonPassed} * too far ${profile.distance_mi}km / mi`;
     hasAllCriterias = false;
   }
   if (criterias?.hasJob && profile.jobs.length === 0) {
-    reasonPassed = `${reasonPassed} no job filled`;
+    reasonPassed = `${reasonPassed} * no job filled`;
     hasAllCriterias = false;
   }
   if (criterias?.minPics && profile.photos.length < criterias.minPics) {
-    reasonPassed = `${reasonPassed} less than ${criterias?.minPics} pictures`;
+    reasonPassed = `${reasonPassed} * less than ${criterias?.minPics} pictures`;
     hasAllCriterias = false;
   }
   return { hasAllCriterias, reasonPassed };
